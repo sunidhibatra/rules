@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Copse|Coustard|Concert+One|Francois+One|Gamja+Flower|Work+Sans|Fredericka+the+Great');
+body{
+	background-image: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 128, 128));
+	
+}
+.card{
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color:rgba(245, 245, 245, 0.4);
+	opacity: 1;
+	border-radius: 50px;
+	font-weight: bold;
+}
+
+.card-body{
+	margin: 0 auto;
+	box-shadow: 0 0 10px #000000;
+	border-radius: 50px;
+	width: 640px;
+}
+.card-title{
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+	font-size: 3rem;
+}
+hr{
+	color: black;
+	background-color: black;
+}
+.card-text{
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+	font-size: 0.8rem;
+}
+li{
+	animation: tilt 4s ease-in-out;
+	font-size: 1.5rem;
+}
+@keyframes tilt{
+	from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+
+  }
+
+  60% {
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-5deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
